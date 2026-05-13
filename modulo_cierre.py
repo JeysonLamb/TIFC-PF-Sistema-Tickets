@@ -5,5 +5,5 @@ def cerrar_ticket(ticket_id):
 
 def reporte():
     # Cuenta tickets por estado y prioridad
-    # Muestra porcentajes
-    pass
+    # Mue2stra porcentajes
+   print("Creacion Rama Angelica Mod Cierre")
