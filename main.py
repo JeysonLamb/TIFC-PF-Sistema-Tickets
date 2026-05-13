@@ -10,3 +10,9 @@ while True:
     print("5. Salir")
     opcion = input("Selecciona: ")
     # if/elif para cada opción...
+
+    if opcion == "1":
+        descripcion = input("Descripción: ")
+        prioridad = input("Prioridad (Alta/Media/Baja): ")
+        registrar_ticket(descripcion, prioridad)
+        
