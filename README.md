@@ -1,96 +1,75 @@
-# IT Support Ticket System
+Sistema de Tickets de Soporte TI
+📌 Descripción del proyecto
 
-## 📌 Project Description
+Este proyecto consiste en el desarrollo de un sistema de tickets de soporte técnico por consola para la empresa TechSoluciones S.A..
 
-This project involves the development of a console-based technical support ticket system for the company TechSoluciones S.A.
+El sistema permite registrar incidencias, consultar tickets, listarlos y marcarlos como resueltos durante una sesión de trabajo.
 
-The system allows users to register incidents, view tickets, list them, and mark them as resolved during a work session.
+Todos los tickets se almacenan temporalmente en una lista en memoria mientras el programa está en ejecución.
 
-All tickets are temporarily stored in an in-memory list while the program is running.
+🧩 Caso de negocio
 
+La empresa TechSoluciones S.A. recibe decenas de solicitudes de soporte diariamente y necesita una solución sencilla para administrar incidencias técnicas de manera organizada.
 
-## 🧩 Business Case
+El objetivo del sistema es facilitar al equipo de TI:
 
-The company TechSoluciones S.A. receives dozens of support requests daily and needs a simple solution to manage technical incidents in an organized way.
+Registrar tickets de soporte
+Consultar información de tickets
+Listar tickets registrados
+Cambiar el estado de tickets
+Generar reportes básicos
 
-The objective of the system is to help the IT team to:
+🗂️ Estructura de datos
 
-- Register support tickets  
-- Consult ticket information  
-- List registered tickets  
-- Change ticket status  
-- Generate basic reports  
+Todos los tickets se almacenan en una lista llamada:
 
-
-## 🗂️ Data Structure
-
-All tickets are stored in a list called:
-
-```python
 tickets = []
-```
 
-The list is created in `main.py` and shared across the different system functions.
+La lista se crea en main.py y se comparte con las diferentes funciones del sistema.
 
-Each ticket contains information related to:
+Cada ticket contiene información relacionada con:
 
-- Ticket number  
-- Incident description  
-- Assigned specialist  
-- Issue type  
-- Ticket source  
-- Priority  
-- Date and time opened  
-- Ticket status  
+Número de ticket
+Descripción de la incidencia
+Especialista asignado
+Tipo de asunto
+Fuente del ticket
+Prioridad
+Fecha y hora de apertura
+Estado del ticket
+⚙️ Funcionalidades del sistema
+📥 Registro de tickets
 
+Permite crear nuevos tickets de soporte ingresando la información correspondiente.
 
-## ⚙️ System Features
+🔎 Consulta y listado
 
-### 📥 Ticket Registration
+Permite visualizar tickets registrados y consultar información específica.
 
-Allows the creation of new support tickets by entering the corresponding information.
+✅ Cierre y reporte
 
-### 🔎 Query and Listing
+Permite actualizar el estado de los tickets y generar reportes básicos del sistema.
 
-Allows users to view registered tickets and consult specific information.
+👥 Participantes del grupo
+Angelica Herrera Gonzalez
+Andrea LLorenta
+Esteban Cordero
+[Nombre integrante 4]
+🛠️ Tecnologías utilizadas
+Python
+Git
+GitHub
+Consola / Terminal
+▶️ Ejecución del proyecto
 
-### ✅ Closing and Reporting
+Clonar el repositorio:
 
-Allows users to update the status of tickets and generate basic system reports.
-
-
-## 👥 Group Participants
-
-- Angelica Herrera Gonzalez  
-- Andrea Llorenta  
-- Esteban Cordero  
-- Lina Chavez
-
-
-## 🛠️ Technologies Used
-
-- Python  
-- Git  
-- GitHub  
-- Console / Terminal  
-
-
-## ▶️ Running the Project
-
-### 1. Clone the repository
-
-```bash
 git clone URL_DEL_REPOSITORIO
-```
 
-### 2. Enter the project folder
+Ingresar a la carpeta del proyecto:
 
-```bash
 cd TIFC-PF-Sistema-Tickets
-```
 
-### 3. Run the program
+Ejecutar el programa:
 
-```bash
 python main.py
-```
